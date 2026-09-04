@@ -1,0 +1,115 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+    {
+        "context": "Workspace",
+        "bindings": {
+            // "shift shift": "file_finder::Toggle"
+            "ctrl-f5": [
+                "task::Spawn",
+                {
+                    "task_name": "Run Python with uv",
+                    "reevaluate_context": true,
+                },
+            ],
+        },
+    },
+    {
+        "context": "vim_mode == insert",
+        "bindings": {
+            "ctrl-v": "editor::Paste",
+        },
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "ctrl-k ctrl-u": "editor::ToggleComments",
+        },
+    },
+    {
+        "context": "Editor && vim_mode == insert",
+        "bindings": {
+            // "j k": "vim::NormalBefore"
+        },
+    },
+    {
+        "context": "Editor && vim_mode == normal",
+        "bindings": {
+            "space f d": "editor::GoToDefinition",
+            "space n a": "editor::GoToDiagnostic",
+            "space r": "editor::Rename",
+            "space h": "editor::Hover",
+            "space f f": "editor::Format",
+            "ctrl-o": "pane::RevealInProjectPanel",
+        },
+    },
+    {
+        "unbind": {
+            "ctrl-o": "workspace::OpenFiles",
+        },
+    },
+    {
+        "context": "Terminal",
+        "unbind": {
+            "ctrl-o": ["terminal::SendKeystroke", "ctrl-o"],
+        },
+        "bindings": {
+            "ctrl-ö": "editor::ToggleFocus",
+        },
+    },
+    {
+        "context": "Pane",
+        "bindings": {
+            "ctrl+alt+left": "pane::ActivateLastItem",
+            "ctrl+alt+right": "pane::ActivatePreviousItem",
+        },
+    },
+    {
+        "context": "!Editor",
+        "bindings": {
+            "ctrl-o": "editor::ToggleFocus",
+        },
+    },
+    {
+        "context": "Pane",
+        "bindings": {
+            "alt-left": "pane::ActivatePreviousItem",
+            "alt-right": "pane::ActivateNextItem",
+        },
+    },
+    {
+        "context": "Editor && mode == full",
+        "unbind": {
+            "ctrl-g": "go_to_line::Toggle",
+        },
+    },
+    {
+        "context": "ThreadsSidebar",
+        "unbind": {
+            "ctrl-g": "agents_sidebar::ToggleThreadHistory",
+        },
+    },
+    {
+        "context": "Workspace",
+        "unbind": {
+            "ctrl-shift-n": "workspace::NewWindow",
+        },
+    },
+    {
+        "context": "!ProjectPanel",
+        "bindings": {
+            "ctrl-shift-n": "workspace::NewWindow",
+        },
+    },
+    {
+        "context": "ProjectPanel",
+        "bindings": {
+            "ctrl-shift-n": "project_panel::NewDirectory",
+        },
+    },
+]
