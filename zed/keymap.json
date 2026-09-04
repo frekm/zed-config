@@ -28,6 +28,7 @@
             "ctrl-9": ["workspace::ActivatePane", 8],
             "ctrl-o": "project_panel::ToggleFocus",
             "ctrl-g": "git_panel::ToggleFocus",
+            "ctrl-e": "editor::ToggleFocus",
         },
     },
     {
@@ -87,12 +88,6 @@
         },
     },
     {
-        "context": "!Editor",
-        "bindings": {
-            "ctrl-o": "editor::ToggleFocus",
-        },
-    },
-    {
         "context": "Pane",
         "bindings": {
             "alt-left": "pane::ActivatePreviousItem",
@@ -129,4 +124,43 @@
             "ctrl-shift-n": "project_panel::NewDirectory",
         },
     },
+    {
+        "context": "MarkdownPreview",
+        "unbind": {
+            "ctrl-e": "markdown::ScrollDown"
+        }
+    },
+    {
+        "context": "VimControl && !menu",
+        "unbind": {
+            "ctrl-e": "vim::LineDown"
+        }
+    },
+    {
+        "context": "showing_completions",
+        "unbind": {
+            "ctrl-e": "vim::LineDown"
+        }
+    },
+    {
+        "context": "Workspace",
+        "unbind": {
+            "ctrl-e": "file_finder::Toggle"
+        }
+    },
+    {
+        "context": "Terminal",
+        "unbind": {
+            "ctrl-e": [
+                "terminal::SendKeystroke",
+                "ctrl-e"
+            ]
+        }
+    },
+    {
+        "context": "KeymapEditor",
+        "unbind": {
+            "ctrl-e": "zed::OpenKeymapFile"
+        }
+    }
 ]
