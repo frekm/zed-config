@@ -11,7 +11,7 @@
     "git": {
         "diff_base": "head",
     },
-    "use_autoclose": true,
+    "use_autoclose": false,
     "auto_indent_on_paste": false,
     "diagnostics": {
         "button": true,
