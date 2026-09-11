@@ -9,7 +9,7 @@
 {
     "cli_default_open_behavior": "existing_window",
     "git": {
-        "diff_base": "head"
+        "diff_base": "head",
     },
     "use_autoclose": false,
     "diagnostics": {
