@@ -64,6 +64,8 @@
             "space h": "editor::Hover",
             "space f f": "editor::Format",
             "ctrl-o": "pane::RevealInProjectPanel",
+            "alt-left": "pane::GoBack",
+            "alt-right": "pane::GoForward",
         },
     },
     {
@@ -78,13 +80,6 @@
         },
         "bindings": {
             "ctrl-ö": "editor::ToggleFocus",
-        },
-    },
-    {
-        "context": "Pane",
-        "bindings": {
-            "ctrl+alt+left": "pane::ActivateLastItem",
-            "ctrl+alt+right": "pane::ActivatePreviousItem",
         },
     },
     {

@@ -12,6 +12,7 @@
         "diff_base": "head",
     },
     "use_autoclose": false,
+    "auto_indent_on_paste": false,
     "diagnostics": {
         "button": true,
     },
@@ -44,6 +45,12 @@
     "which_key": { "enabled": true, "delay_ms": 700 },
     "terminal": {
         "font_family": "Cascadia Mono",
+        "detect_venv": {
+            "on": {
+                "directories": [".venv", "venv"],
+                "activate_script": "default",
+            },
+        },
     },
     "telemetry": {
         "diagnostics": false,
