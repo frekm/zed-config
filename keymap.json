@@ -67,6 +67,8 @@
             "alt-left": "pane::GoBack",
             "alt-right": "pane::GoForward",
         },
+        "unbind": {
+        }
     },
     {
         "unbind": {
