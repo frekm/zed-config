@@ -10,6 +10,9 @@
     "debugger": {
         "dock": "right"
     },
+    "inlay_hints":{
+        "show_value_hints": false,
+    },
     "cli_default_open_behavior": "existing_window",
     "git": {
         "diff_base": "head",
