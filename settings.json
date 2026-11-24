@@ -15,7 +15,7 @@
     },
     "cli_default_open_behavior": "existing_window",
     "command_aliases": {
-      "bc": ":tabclose"
+      "bd": ":tabclose"
     },
     "git": {
         "diff_base": "head",
